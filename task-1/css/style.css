@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.flags__item {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 300px;
+	max-width: 300px;
+	height: 200px;
+	margin: 12px auto;
+}
+
+.flags__item_ukraine :nth-child(1) {
+	width: 100%;
+	height: 100px;
+	background-color: rgb(0, 87, 184);
+}
+.flags__item_ukraine :nth-child(2) {
+	width: 100%;
+	height: 100px;
+	background-color: rgb(255, 216, 0);
+}
+
+.flags__item_japan {
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+}
+.flags__item_japan :nth-child(1) {
+	width: 120px;
+	height: 120px;
+	background-color: #ED2939;
+	border-radius: 50%;
+}
+
+.flags__item_iceland {
+	height: 216px;
+	justify-content: center;
+	position: relative;
+	background-color: #02529c;
+}
+.flags__item_iceland :nth-child(1) {
+	width: 100%;
+	height: calc(216px / 9 * 2);
+	background-color: #ffffff;
+}
+.flags__item_iceland :nth-child(2) {
+	width: calc(216px / 9 * 2);
+	height: 100%;
+	background-color: #ffffff;
+	position: absolute;
+	left: 28%;
+}
+.flags__item_iceland :nth-child(3) {
+	width: 100%;
+	height: calc(216px / 9 * 1);
+	background-color: #dc1e35;
+	position: absolute;
+	top: calc(50% - (216px / 9 * 1) / 2);
+}
+.flags__item_iceland :nth-child(4) {
+	width: calc(216px / 9 * 1);
+	height: 100%;
+	background-color: #dc1e35;
+	position: absolute;
+	left: calc(28% + ((216px / 9 * 2) - (216px / 9 * 1)) / 2);
+}
+
+.flags__item_czech {
+	border: 1px solid black;
+	position: relative;
+}
+.flags__item_czech :nth-child(1) {
+	display: block;
+	width: 50%;
+	height: 100%;
+	background-color: #253d83;
+	clip-path: polygon(0 0, 0% 100%, 100% 50%);
+	position: absolute;
+	left: 0; 
+}
+.flags__item_czech :nth-child(2) {
+	width: 100%;
+	height: 100px;
+	background-color: #ffffff;
+}
+.flags__item_czech :nth-child(3) {
+	width: 100%;
+	height: 100px;
+	background-color: #ee1c25;
+}
